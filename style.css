@@ -1,0 +1,97 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url(Font/Montserrat-Regular.ttf);
+}
+
+body{
+    background-color: white;
+    background-attachment: scroll;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    background-color: black;
+}
+
+#header:first-child{
+    justify-content: flex-start;
+}
+
+.logo{
+    z-index: 1;
+}
+
+.logo a{
+    font: normal 1.6rem "Montserrat";
+    font-weight: 700;
+    color: royalblue;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.navbar a{
+    font: normal 18pt "Montserrat";
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;  
+}
+
+.square1{
+    position: relative;
+    margin: 0 auto;
+    top: 1000px;
+    width: 100%;
+    position: relative;
+    background-color: royalblue;
+    scroll-behavior: auto;
+    z-index: -1;
+    border-radius: 50px
+}
+
+
+.square1 h2{
+    position: absolute;
+    height: 20px;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font: normal lighter 40pt "Montserrat";
+}
+
+.line1{
+    position: absolute;
+    border-style: solid;
+    border-color: white;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    width: 30%;
+    border-radius: 20px;
+}
+
+.other{
+    display: flex;
+    border: solid black;
+    scroll-behavior: auto;  
+    margin-top: 1100pt;
+    justify-content: center;
+}
+
+.gallery{
+    border: solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery-container{
+}
