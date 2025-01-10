@@ -49,15 +49,14 @@ body{
 .square1{
     position: relative;
     margin: 0 auto;
-    top: 1000px;
-    width: 100%;
-    position: relative;
+    top: 150px;
+    width: 80%;
+    height: 1200px;
     background-color: royalblue;
     scroll-behavior: auto;
-    z-index: -1;
+    z-index: 5;
     border-radius: 50px
 }
-
 
 .square1 h2{
     position: absolute;
@@ -79,7 +78,19 @@ body{
     border-radius: 20px;
 }
 
+.gallery{
+    position: absolute;
+    left: 50%;
+    width: 75%;
+    top: 150px;
+    transform: translatex(-50%);
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
 .other{
+    position: absolute;
     display: flex;
     border: solid black;
     scroll-behavior: auto;  
@@ -87,11 +98,30 @@ body{
     justify-content: center;
 }
 
+
+/*
 .gallery{
+    position: relative;
     border: solid black;
     display: flex;
     justify-content: space-evenly;
 }
+*/
 
-.gallery-container{
+.gallery-images img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 2px gray;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.gallery-images img:hover{
+    border: 2px solid black;
+    transform: scale(150%);
+}
+
+.description{
+    font: normal 200 12pt "Montserrat";
 }
