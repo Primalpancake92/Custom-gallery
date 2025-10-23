@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: Insert Update Message into Index.html 👈 New Step
+      - name: Check user
         run: |
           # The sed command needs to be here, under 'run:'
           # Note: We use the single-quote syntax to make sure the full date string is preserved
